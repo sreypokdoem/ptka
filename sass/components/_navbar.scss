@@ -1,0 +1,78 @@
+@import 'variable';
+@import '../mixins/mixin';
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $backgroundcolor;
+    @include flex-between;
+    @include responsive(phone){
+        padding: $lg-padding;
+    }
+    &-left{
+        @include flex-center;
+        color: $fontcolor;
+        img{
+            @include img;
+            @include responsive (phone){
+                width: 100px;
+            }
+        }
+        h1{
+            @include responsive(tablet){
+                display: none;
+            }
+        }
+    }
+    &-center{
+        @include flex-center;
+        @include responsive (phone){
+            display: flex;
+            flex-direction: column;
+            margin-left: -5%;
+        }
+        a{
+            @include link;
+            margin: $mg-magin;
+            @include responsive (phone){
+                font-size: 15px;
+            }
+           
+        }
+        
+    }
+    &-right{
+        @include flex-center;
+        @include responsive (phone){
+            display: flex;
+            flex-direction: column-reverse;
+    
+        }
+        button{
+            @include button;
+            border-radius: 30px;
+            @include responsive (phone){
+                margin-top: -3px;
+            }
+            a{
+                @include link;
+                @include responsive (phone){
+                    font-size: 14px;
+                    
+                }
+            }
+        }
+        img{
+            @include responsive (phone){
+                display: none;
+            }
+        }
+        #log_out{
+            background-color: $secondarycolor;
+            @include responsive(tablet){
+                display: none;
+            }
+        }
+    }
+}
+

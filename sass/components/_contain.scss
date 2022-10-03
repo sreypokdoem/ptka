@@ -1,0 +1,83 @@
+
+.maincontain2{
+    background-image: url(https://careercarejobconsultancy.com/wp-content/uploads/2021/07/zahidi-2656-1024x415.jpg);
+    @include bg-img;
+    h1{
+        text-align: left;
+        padding: 10%;
+        color: $fontcolor;
+        font-size: $fontsize;
+        @include responsive(tablet){
+            font-size: 40px; 
+        }
+    }
+}
+
+.maincontain3{
+    .title{
+        @include flex-center;
+        @include responsive(tablet){
+            margin-top: -55% 
+        }
+        @include responsive(phone){
+            margin-top: -50% 
+        }
+        
+    }
+    .selection{
+       @include d-flexcard;
+       @include responsive(tablet){
+            display: flex;
+            flex-wrap: wrap;
+         }
+        @include responsive(phone){
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: scroll;
+                width: 100%;
+                padding: 10px;
+ 
+        }
+        select{
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: $boxsadow;
+            @include responsive(tablet){
+                margin-top: $lg-magin;
+            }
+            @include responsive(phone){
+                height: 6vh;
+                padding: 8px;
+                width: 90px
+                
+            }
+            
+            option{
+                padding: $mg-padding;
+            }
+        }
+    }
+}
+.link{
+    @include flex-center;
+    margin: 10px;
+    @include responsive(phone){
+        display: none;
+    }
+    i{
+        @include icon;
+        margin-right: -15px;
+        
+    }
+    button{
+        padding: $lg-padding;
+        font-size: 20px;
+        margin: $lg-magin;
+        font-style: italic;
+        border: none;
+        a{
+            @include link;
+            color: black;
+        }
+    }
+}

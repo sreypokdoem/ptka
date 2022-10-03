@@ -1,0 +1,81 @@
+@import'../mixins/mixin';
+.contain{
+    flex: 2;
+    
+    &-logo{
+        @include flex-center;
+        img{
+            @include img;
+            
+        }
+    }
+    &-form{
+        margin: $lg-magin;
+        &-1{
+            @include flex-center;
+            @include responsive(phone){
+                display: flex;
+                flex-direction: column;
+            } 
+            .form-first{
+                @include responsive(tablet){
+                    display: flex;
+                    flex-direction: column;
+                    input{
+                        margin-left: 10%;
+                    }
+                    @include responsive(phone){
+                        input{
+                            width: 100px;
+                            
+                        }
+                    } 
+                }
+                
+                @include form;
+                margin: $lg-magin;
+            }
+        }
+        &-2{
+            margin-left: 5%;
+            .form-first{
+                @include form;
+                margin: $lg-magin;
+                input{
+                    width: 95%
+                }
+                .form-lable{
+                    @include flex-between;
+                    #link{
+                            @include link;
+    
+                    }
+                }
+            }
+        }
+        .btn{
+            @include flex-center;
+            
+            button{
+                @include button;
+                width: 50%;
+                
+                a{
+                    @include link;
+                }
+            }
+            
+        }
+    } 
+    .group-img{
+        display: flex;
+        justify-content: center;
+        img{
+            margin: $lg-magin;
+            background-color: $fontcolor;
+            padding: 5px;
+            border-radius: $border-radius;
+        }
+    }  
+}
+

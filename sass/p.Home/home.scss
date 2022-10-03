@@ -1,0 +1,16 @@
+
+@import '../components/variable';
+@import '../components/navbar';
+@import '../components/search';
+@import '../components/contain';
+@import './cardhome';
+@import '../components/footer';
+@import '../components/hover';
+@import '../mixins/mixin';
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: $fontfamily;
+}
+

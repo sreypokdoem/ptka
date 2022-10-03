@@ -1,0 +1,519 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(23, 23, 23, 0.975);
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 428px) {
+  .navbar {
+    padding: 15px;
+  }
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.navbar-left img {
+  border-radius: 50%;
+  background-color: white;
+  margin: 15px;
+}
+@media screen and (max-width: 428px) {
+  .navbar-left img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-left h1 {
+    display: none;
+  }
+}
+.navbar-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 428px) {
+  .navbar-center {
+    display: flex;
+    flex-direction: column;
+    margin-left: -5%;
+  }
+}
+.navbar-center a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+@media screen and (max-width: 428px) {
+  .navbar-center a {
+    font-size: 15px;
+  }
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 428px) {
+  .navbar-right {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.navbar-right button {
+  background-color: rgb(9, 120, 175);
+  border-radius: 30px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: rgba(7, 95, 143, 0.24) 0px 3px 8px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+}
+@media screen and (max-width: 428px) {
+  .navbar-right button {
+    margin-top: -3px;
+  }
+}
+.navbar-right button a {
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 428px) {
+  .navbar-right button a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .navbar-right img {
+    display: none;
+  }
+}
+.navbar-right #log_out {
+  background-color: rgb(78, 125, 7);
+}
+@media screen and (max-width: 768px) {
+  .navbar-right #log_out {
+    display: none;
+  }
+}
+
+.main1 {
+  background-image: url(https://artscouncil.mb.ca/wp-content/uploads/2022/02/artistic-resume-header-2.png);
+  background-size: cover;
+  height: 80vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 70vh;
+  margin-top: 20px;
+}
+.main1 h1 {
+  text-align: left;
+  padding: 15%;
+  font-size: 70px;
+}
+@media screen and (max-width: 428px) {
+  .main1 h1 {
+    font-size: 40px;
+  }
+}
+
+.main-contain {
+  display: flex;
+}
+@media screen and (max-width: 428px) {
+  .main-contain {
+    margin-top: -40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-contain {
+    margin-top: -30%;
+  }
+}
+.main-contain .main-form {
+  flex: 3;
+}
+@media screen and (max-width: 428px) {
+  .main-contain .main-form {
+    width: 200%;
+  }
+}
+.main-contain .main-form .form {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 768px) {
+  .main-contain .main-form .form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 428px) {
+  .main-contain .main-form .form {
+    margin-left: 30%;
+  }
+}
+.main-contain .main-form .form-left input {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(222, 209, 183);
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  .main-contain .main-form .form-left {
+    margin-left: -15%;
+  }
+}
+.main-contain .main-form .form-left input {
+  margin-top: 15px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+@media screen and (max-width: 428px) {
+  .main-contain .main-form .form-left input {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-contain .main-form .form-left input {
+    margin: 5px;
+    margin-left: -5%;
+  }
+}
+.main-contain .main-form .upload .form-left input {
+  background-color: rgb(167, 158, 158);
+  padding: 100px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+@media screen and (max-width: 768px) {
+  .main-contain .main-form .upload .form-left input {
+    padding: 20px;
+  }
+}
+.main-contain .main-form .upload .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .main-contain .main-form .upload .btn {
+    margin-left: -18%;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 428px) {
+  .main-contain .main-form .upload .btn {
+    margin-left: 2%;
+  }
+}
+.main-contain .main-form .upload .btn button {
+  background-color: rgb(9, 120, 175);
+  border-radius: 30px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: rgba(7, 95, 143, 0.24) 0px 3px 8px;
+  color: white;
+  border: none;
+  width: 20%;
+}
+.main-contain .main-form .upload .btn button a {
+  text-decoration: none;
+  color: white;
+}
+.main-contain .main-form .upload .btn #AP {
+  background-color: rgb(4, 84, 35);
+}
+.main-contain .main-right {
+  flex: 1;
+  background-color: rgb(214, 200, 178);
+}
+@media screen and (max-width: 428px) {
+  .main-contain .main-right {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-contain .main-right {
+    margin-left: -15%;
+  }
+}
+.main-contain .main-right .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-contain .main-right .img img {
+  border-radius: 50%;
+  background-color: white;
+  margin: 15px;
+  background-color: rgb(160, 84, 84);
+}
+@media screen and (max-width: 768px) {
+  .main-contain .main-right .img img {
+    width: 100px;
+  }
+}
+.main-contain .main-right .Group-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-contain .main-right .Group-icon i {
+  color: rgb(217, 139, 13);
+  margin: 3px;
+}
+.main-contain .main-right .Menu .text {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+.main-contain .main-right .Menu .text i {
+  margin: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(23, 23, 23, 0.975);
+  color: white;
+  padding: 15px;
+}
+@media screen and (max-width: 768px) {
+  .footer p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+.footer .footer-left {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .footer .footer-left {
+    flex: 1, 5;
+  }
+}
+.footer .footer-left .left-top {
+  display: flex;
+  align-items: center;
+}
+.footer .footer-left .left-top img {
+  border-radius: 50%;
+  background-color: white;
+  margin: 15px;
+}
+@media screen and (max-width: 428px) {
+  .footer .footer-left .left-buttom {
+    margin-left: 5%;
+  }
+}
+.footer .footer-left .left-buttom img {
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 5px;
+}
+@media screen and (max-width: 768px) {
+  .footer .footer-left .left-buttom img {
+    padding: 2px;
+    width: 30px;
+  }
+}
+.footer .footer-right {
+  flex: 3;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .footer .footer-right {
+    flex: 2;
+  }
+}
+.footer .footer-right .right-top {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .footer .footer-right .right-top .item-1 {
+    margin: 15px;
+  }
+  .footer .footer-right .right-top .item-1 br {
+    display: none;
+  }
+}
+.footer .footer-right .right-top .item-1 a {
+  text-decoration: none;
+  color: white;
+}
+.footer .footer-right .right-top .item-1 .icon-footer {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 428px) {
+  .footer .footer-right .right-top .item-1 .icon-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.footer .footer-right .right-top .item-1 .icon-footer i {
+  background-color: #fff;
+  padding: 5px;
+  color: black;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+@media screen and (max-width: 768px) {
+  .footer .footer-right .right-top #delete {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer .footer-right .right-buttom {
+    display: none;
+  }
+}
+
+p {
+  font-size: 15px;
+}
+
+.creator {
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 428px) {
+  .creator {
+    font-size: 13px;
+  }
+}
+
+.group-img > img:hover {
+  cursor: pointer;
+  background-color: rgb(232, 239, 170);
+}
+
+.form-first > input:hover {
+  cursor: pointer;
+  background-color: rgb(232, 239, 170);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.btn > button:hover {
+  cursor: pointer;
+  background-color: rgb(86, 48, 122);
+}
+
+.navbar-center > a:hover {
+  cursor: pointer;
+  border: 2px solid rgb(232, 239, 170);
+  padding: 15px;
+}
+
+.navbar-right > button:hover {
+  cursor: pointer;
+  background-color: rgb(232, 239, 170);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.navbar-right > button:hover a {
+  color: black;
+}
+
+.navbar-right > #log_out:hover {
+  cursor: pointer;
+  background-color: rgb(86, 48, 122);
+}
+.navbar-right > #log_out:hover a {
+  color: white;
+}
+
+.maincontain1-left > input:hover {
+  cursor: pointer;
+  background-color: rgb(232, 239, 170);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.maincontain1-btn > button:hover {
+  cursor: pointer;
+  background-color: rgb(86, 48, 122);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.contain-select > select:hover {
+  cursor: pointer;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.card-item:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.5s;
+  background-color: rgb(232, 239, 170);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px, rgba(248, 251, 248, 0.22) 0px 15px 12px;
+}
+
+.card-item-btn > button:hover {
+  cursor: pointer;
+  background-color: rgb(86, 48, 122);
+}
+
+.card-item1:hover {
+  cursor: pointer;
+  background-color: rgb(244, 199, 117);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px, rgba(248, 251, 248, 0.22) 0px 15px 12px;
+}
+.card-item1:hover .card-body h4 a, .card-item1:hover .card-body h3 a {
+  color: black;
+}
+
+.form > .form-left > input:hover {
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.5s;
+  background-color: rgb(232, 239, 170);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px, rgba(248, 251, 248, 0.22) 0px 15px 12px;
+}
+
+.upload > .form > .form-left > input:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  background-color: rgb(232, 239, 170);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px, rgba(248, 251, 248, 0.22) 0px 15px 12px;
+}
+
+.main-form > .upload > .btn > button:hover {
+  background-color: rgb(86, 48, 122);
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.main-form > .upload > .btn > #AP:hover {
+  background-color: rgb(86, 48, 122);
+  transform: scale(1.05);
+  transition: 0.5s;
+}

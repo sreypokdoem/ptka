@@ -1,0 +1,42 @@
+
+.title{
+    @include flex-center;
+}
+.group-card{
+    @include responsive(phone){
+        display: flex;
+        flex-direction: column;
+        
+    }
+    @include flexSize(3);
+    @include flex-center;
+    .card-item{
+        background-color: $card-color;
+        padding: $mg-padding;
+        margin: $mg-magin;
+       .card-top{
+            @include d-flexcard;
+            @include responsive(tablet){
+                @include flex-center;
+                flex-direction: column;
+            }
+            .card-name{
+                .text-card{
+                    display: flex;
+                    align-items: center;
+                    i{
+                        padding: 5px;
+                    }
+                }
+            }
+       }
+       .card-buttom{
+            @include flex-center;
+            img{
+                @include img;
+                background-color: $backgroundcolor;
+                padding: 5px;
+            }
+       }
+    }
+}

@@ -1,0 +1,109 @@
+
+.footer{
+    
+    @include responsive(tablet){
+        p{
+            font-size: 13px
+        }     
+    }
+    @include flex-around;
+    @include responsive(phone){
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    background-color: $backgroundcolor;
+    color: $fontcolor;
+    padding: $lg-padding;
+    .footer-left{
+        @include flexSize(1);
+        @include flex-between;
+        flex-direction: column;
+        @include responsive(tablet){
+             flex: 1,5;
+        }
+        .left-top{
+            display: flex;
+            align-items: center;
+            img{
+                @include img;
+                
+            }
+        }
+        .left-buttom{
+            @include responsive(phone){
+                margin-left: 5%;
+            }
+            img{
+                background-color: $fontcolor;
+                border-radius: $border-radius;
+                padding: 5px;
+                margin-left: 5px;
+                @include responsive(tablet){
+                    padding: 2px;
+                    width: 30px;
+                }
+                
+            }
+        }
+    }
+    .footer-right{
+        @include flexSize(3);
+        padding: 10px;
+        @include responsive(tablet){
+            flex: 2;
+        }
+        .right-top{
+            @include flex-around;
+            .item-1{
+                @include responsive(tablet){
+                    margin: $lg-magin;
+                    br{
+                        display: none;
+                    }
+                }
+                a{
+                    @include link;
+                }
+                .icon-footer{
+                    display: flex;
+                    align-items: center;
+                    @include responsive(phone){
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                 
+                    i{
+                        background-color: #fff;
+                        padding:5px;
+                        color: black;
+                        border-radius: $border-radius;
+                        margin-right: $lg-magin;
+                    }
+                }
+            }
+            #delete{
+                @include responsive(tablet){
+                    display: none;
+                }
+            }
+        }
+        .right-buttom{
+            @include responsive(tablet){
+                    display: none;
+            }
+        }
+        
+    }
+}
+p{
+    font-size: 15px
+}
+.creator{
+    display: flex;
+    justify-content: flex-end;
+    @include responsive(phone){
+        font-size: 13px;
+    }
+}

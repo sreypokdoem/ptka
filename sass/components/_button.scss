@@ -1,0 +1,15 @@
+@import '../mixins/mixin';
+.contain{
+    .btn{
+        @include flex-center;
+        button{
+            @extend input,;
+            width: 50%;
+            font-weight: bold;
+            a{
+                text-decoration: none;
+            }
+            
+        }
+    }
+}

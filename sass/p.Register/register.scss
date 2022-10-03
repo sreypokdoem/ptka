@@ -1,0 +1,29 @@
+@import '../p.login/main.scss';
+@import '../mixins/mixin';
+@import '../components/hover';
+.check-box{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.btn{
+    @include flex-between;
+    button{
+        @include button;
+        @include responsive(phone){
+            // display: none;
+            width: 90%;
+    }
+        width: 30%;
+        a{
+            @include link;
+        }
+    }   
+    #RG{
+        background-color: rgb(5, 98, 70);
+        
+    }
+    #RG:hover{
+        background-color: rgb(86, 48, 122);
+    }
+}

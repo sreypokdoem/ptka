@@ -1,0 +1,41 @@
+@import '../mixins/mixin';
+.maincontain1{
+    @include flex-center;
+    margin: $mg-magin;
+    &-left{
+        @include flex-center;
+        @include responsive(phone){
+            width: 80%;
+        }
+        input{
+            padding: $lg-padding;
+            @include responsive(phone){
+                padding: 7px;
+            }
+        }
+        .material-icons{
+            @include responsive(phone){
+                margin-left: -10%;
+            }
+        }
+        input{
+            width: 500px;
+            outline: none;
+            border-radius:30px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        i{
+            margin-left: -7%;
+        }
+    }
+    &-btn{
+        button{
+            @include button;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            @include responsive(tablet){
+                display: none;
+            }
+
+        }
+    }
+}

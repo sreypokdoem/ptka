@@ -1,0 +1,51 @@
+@import '../mixins/mixin';
+.company{
+    height: 40vh;
+    width: 97%;
+    
+}
+
+.card-contain{
+    @include responsive(tablet){
+        margin-top: 10%;
+    }
+    @include responsive(phone){
+        display: none;
+    }
+    
+    @include d-flexcard;
+    margin: $mg-magin;
+    .card-item1{
+        width: 15%;
+        padding: $lg-padding;
+        margin: $lg-magin;
+        background-color: $backgroundcolor;
+        color: $fontcolor;
+        @include responsive(tablet){
+            width: 45%
+        }
+        
+        .card-img{
+            img{
+                @include img;
+                margin-left: 50px;
+                @include responsive(tablet){
+                    display: none;
+                }
+               
+            }
+        }
+        .card-body{
+            h3,h4{
+                
+                text-align: center;
+               a{
+                @include link;
+                
+                
+               }  
+            }
+        }
+        
+    }
+}

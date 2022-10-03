@@ -1,0 +1,54 @@
+@import './variable';
+@import '../mixins/mixin';
+body{
+    margin: 0;
+    padding: 0;
+    color: $fontcolor;
+    font-family: $fontfamily;
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        @include responsive(phone){
+            display: none;
+        }
+      }
+}
+
+.main{
+    @include responsive(tablet){
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 70%;
+        margin-left: 13%;
+    }
+    flex: 3;
+    margin: 50px;
+    padding: $mg-padding;
+    width: 90%;
+    background: $backgroundcolor;
+    display: flex;
+    justify-content: space-between;
+    .sidebar{
+        flex: 1;
+        img{
+            @include responsive(phone){
+                display: none;
+            } 
+        }
+        
+    }
+    .contain{
+        &-logo{
+            img{
+                @include responsive(tablet){
+                    width: 100px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import '../components/variable';
+
+.titile{
+    text-align: center;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: $mg-padding;
+    background-color: $backgroundcolor;
+    .card-item{
+        flex: 1;
+        background-color: rgb(225, 214, 214);
+        margin: $mg-magin;
+        padding: $mg-padding;
+        @include responsive(tablet){
+            margin: 5px;
+        }
+        &-top{
+            @include flex-center;
+        
+
+        }
+        
+        &-btn{
+            @include flex-between;
+            
+          
+            button{
+                @include button;
+                width: 80%;
+                a{
+                    @include link;
+                }
+            }
+
+        }
+        
+    }
+}

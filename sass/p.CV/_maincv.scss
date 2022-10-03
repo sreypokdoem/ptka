@@ -1,0 +1,135 @@
+.main1{
+    background-image: url(https://artscouncil.mb.ca/wp-content/uploads/2022/02/artistic-resume-header-2.png);
+    @include bg-img;
+    height: 70vh;
+    margin-top: $mg-magin;
+    h1{
+        text-align: left;
+        
+        padding: 15%;
+        @include responsive(phone){
+            font-size:40px;
+        }
+        font-size: $fontsize;
+    }
+    
+}
+.main-contain{
+    display: flex;
+    @include responsive(phone){
+            margin-top: -40%;
+
+        }
+    @include responsive(tablet){
+        margin-top: -30%;
+    }
+    .main-form{
+        flex: 3;
+        @include responsive(phone){
+            width: 200%;
+        }
+        .form{
+            margin: $mg-magin;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            @include responsive(tablet){
+                display: flex;
+                flex-direction: column;
+                
+            }  
+            @include responsive(phone){
+                margin-left: 30%
+            } 
+            &-left{
+                @include form;
+                @include responsive(tablet){
+                    margin-left: -15%;
+                }
+                input{
+                    @include responsive(phone){
+                        width: 300px;
+                    }
+                    margin-top: $lg-magin;
+                    width: 400px;
+                    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;   
+                    @include responsive(tablet){
+                        margin: 5px;
+                        margin-left: -5%;
+                    }      
+                       
+                  }
+            }
+        }
+        .upload{
+            .form-left{
+                input{
+                    background-color: rgb(167, 158, 158);
+                    padding: 100px;
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                    @include responsive(tablet){
+                        padding: 20px;
+                    }
+                }
+            }
+            .btn{
+                @include flex-center;
+                @include responsive(tablet){
+                    margin-left: -18%;
+                    @include responsive(phone){
+                       margin-left: 2%;
+                    } 
+                }
+                button{
+                    @include button;
+                    width: 20%;
+                    
+                    a{
+                        @include link;
+                       
+                    }
+                }
+                #AP{
+                    background-color: rgb(4, 84, 35);
+                }
+            }
+        }
+    }
+    .main-right{
+        flex: 1;
+        @include responsive(phone){
+            display: none;
+        }
+        @include responsive(tablet){
+                 margin-left: -15%;   
+        }
+        background-color: rgb(214, 200, 178);
+        .img{
+            @include flex-center;
+            img{
+                @include img;
+                @include responsive(tablet){
+                    width: 100px;
+                }
+                background-color: rgb(160, 84, 84);
+            }
+        }
+        .Group-icon{
+            @include flex-center;
+            i{
+                color: rgb(217, 139, 13);
+                margin: 3px;
+            }
+        }
+        .Menu{
+            .text{
+                display: flex;
+                align-items: center;
+                margin: $mg-magin;
+                i{
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
